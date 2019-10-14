@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Soccer Score Keeper App</string>
+    <string name="tv_label_team_title">Team A VS Team B</string>
+    <string name="tv_label_goal">Goals</string>
+    <string name="tv_label_foul">Fouls</string>
+    <string name="tv_label_card">Red Card</string>
+    <string name="btn_label_goal">+1 goal</string>
+    <string name="btn_label_foul">+1 foul</string>
+    <string name="btn_label_card">+1 card</string>
+    <string name="btn_label_reset">Reset</string>
+</resources>
