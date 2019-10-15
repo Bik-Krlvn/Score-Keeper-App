@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:padding="15dp"
+            android:padding="@dimen/padding_title_15dp"
             android:text="@string/tv_label_team_title"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
@@ -71,7 +71,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/marginTop_text_8dp"
                     android:text="@string/tv_label_card"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
@@ -79,7 +79,7 @@
                     android:id="@+id/tv_tm_a_card"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginBottom="@dimen/marginBottom_text_8dp"
                     android:gravity="center_horizontal"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                     tools:text="0" />
@@ -88,35 +88,35 @@
                     android:id="@+id/btn_tm_a_goal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="@dimen/marginStart_text_8dp"
+                    android:layout_marginEnd="@dimen/marginEnd_text_8dp"
+                    android:layout_marginBottom="@dimen/marginBottom_text_8dp"
                     android:text="@string/btn_label_goal" />
 
                 <Button
                     android:id="@+id/btn_tm_a_foul"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="@dimen/marginStart_text_8dp"
+                    android:layout_marginEnd="@dimen/marginEnd_text_8dp"
+                    android:layout_marginBottom="@dimen/marginBottom_text_8dp"
                     android:text="@string/btn_label_foul" />
 
                 <Button
                     android:id="@+id/btn_tm_a_card"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="@dimen/marginStart_text_8dp"
+                    android:layout_marginEnd="@dimen/marginEnd_text_8dp"
+                    android:layout_marginBottom="@dimen/marginBottom_text_8dp"
                     android:text="@string/btn_label_card" />
 
             </LinearLayout>
 
             <View
-                android:layout_width="0.8dp"
+                android:layout_width="@dimen/width_view_separator"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="@dimen/marginBottom_text_8dp"
                 android:background="@color/colorPrimary" />
 
 
@@ -146,7 +146,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/marginTop_text_8dp"
                     android:gravity="center_horizontal"
                     android:text="@string/tv_label_foul"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large" />
@@ -162,7 +162,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/marginTop_text_8dp"
                     android:gravity="center_horizontal"
                     android:text="@string/tv_label_card"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large" />
@@ -171,7 +171,7 @@
                     android:id="@+id/tv_tm_b_card"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginBottom="@dimen/marginBottom_text_8dp"
                     android:gravity="center_horizontal"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                     tools:text="0" />
@@ -181,27 +181,27 @@
                     android:id="@+id/btn_tm_b_goal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="@dimen/marginStart_text_8dp"
+                    android:layout_marginEnd="@dimen/marginEnd_text_8dp"
+                    android:layout_marginBottom="@dimen/marginBottom_text_8dp"
                     android:text="@string/btn_label_goal" />
 
                 <Button
                     android:id="@+id/btn_tm_b_foul"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="@dimen/marginStart_text_8dp"
+                    android:layout_marginEnd="@dimen/marginEnd_text_8dp"
+                    android:layout_marginBottom="@dimen/marginBottom_text_8dp"
                     android:text="@string/btn_label_foul" />
 
                 <Button
                     android:id="@+id/btn_tm_b_card"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="@dimen/marginStart_text_8dp"
+                    android:layout_marginEnd="@dimen/marginEnd_text_8dp"
+                    android:layout_marginBottom="@dimen/marginBottom_text_8dp"
                     android:text="@string/btn_label_card" />
             </LinearLayout>
 
@@ -214,10 +214,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/lv_metric"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginBottom="32dp"
+            android:layout_marginStart="@dimen/marginStart_resetBtn_32dp"
+            android:layout_marginTop="@dimen/marginTop_resetBtn_16dp"
+            android:layout_marginEnd="@dimen/marginEnd_resetBtn_32dp"
+            android:layout_marginBottom="@dimen/marginBottom_resetBtn_32dp"
             android:text="@string/btn_label_reset" />
 
 

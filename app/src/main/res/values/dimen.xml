@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_title_15dp">15dp</dimen>
+    <dimen name="marginTop_text_8dp">8dp</dimen>
+    <dimen name="marginBottom_text_8dp">8dp</dimen>
+    <dimen name="marginStart_text_8dp">8dp</dimen>
+    <dimen name="marginEnd_text_8dp">8dp</dimen>
+    <dimen name="width_view_separator">0.8dp</dimen>
+    <dimen name="marginTop_resetBtn_16dp">16dp</dimen>
+    <dimen name="marginStart_resetBtn_32dp">32dp</dimen>
+    <dimen name="marginEnd_resetBtn_32dp">32dp</dimen>
+    <dimen name="marginBottom_resetBtn_32dp">32dp</dimen>
+
+
+
+
+</resources>

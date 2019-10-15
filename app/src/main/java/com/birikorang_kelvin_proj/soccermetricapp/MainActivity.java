@@ -8,11 +8,26 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private TextView mTmAGoal, mTmBGoal, mTmACard, mTmBCard, mTmAFoul, mTmBFoul;
-    private int currentAGoal = 0,
-            currentBGoal = 0,
-            currentAFoul = 0, currentBFoul = 0,
-            currentACard = 0, currentBCard = 0;
+    private TextView mTmAGoal;
+    private TextView mTmBGoal;
+    private TextView mTmACard;
+    private TextView mTmBCard;
+    private TextView mTmAFoul;
+    private TextView mTmBFoul;
+
+    private int currentAGoal = 0;
+    private int currentBGoal = 0;
+    private int currentAFoul = 0;
+    private int currentBFoul = 0;
+    private int currentACard = 0;
+    private int currentBCard = 0;
+
+    private final String KEY_CURRENT_A_GOAL = "currentAGoal";
+    private final String KEY_CURRENT_B_GOAL = "currentBGoal";
+    private final String KEY_CURRENT_A_FOUL = "currentAFoul";
+    private final String KEY_CURRENT_B_FOUL = "currentBFoul";
+    private final String KEY_CURRENT_A_CARD = "currentACard";
+    private final String KEY_CURRENT_B_CARD = "currentBCard";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mTmAGoal = findViewById(R.id.tv_tm_a_goal);
         mTmBGoal = findViewById(R.id.tv_tm_b_goal);
 
-        //init button
+        //set button listeners
         findViewById(R.id.btn_reset).setOnClickListener(this);
         findViewById(R.id.btn_tm_a_card).setOnClickListener(this);
         findViewById(R.id.btn_tm_b_card).setOnClickListener(this);
@@ -43,12 +58,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void restoreMetricInfo(Bundle savedInstanceState) {
-        currentAGoal = savedInstanceState.getInt("currentAGoal");
-        currentBGoal = savedInstanceState.getInt("currentBGoal");
-        currentAFoul = savedInstanceState.getInt("currentAFoul");
-        currentBFoul = savedInstanceState.getInt("currentBFoul");
-        currentACard = savedInstanceState.getInt("currentACard");
-        currentBCard = savedInstanceState.getInt("currentBCard");
+        currentAGoal = savedInstanceState.getInt(KEY_CURRENT_A_GOAL);
+        currentBGoal = savedInstanceState.getInt(KEY_CURRENT_B_GOAL);
+        currentAFoul = savedInstanceState.getInt(KEY_CURRENT_A_FOUL);
+        currentBFoul = savedInstanceState.getInt(KEY_CURRENT_B_FOUL);
+        currentACard = savedInstanceState.getInt(KEY_CURRENT_A_CARD);
+        currentBCard = savedInstanceState.getInt(KEY_CURRENT_B_CARD);
 
         mTmACard.setText(String.valueOf(currentACard));
         mTmBCard.setText(String.valueOf(currentBCard));
@@ -105,44 +120,44 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void addCardToTeamA() {
-        currentACard += 1;
+        currentACard ++;
         mTmACard.setText(String.valueOf(currentACard));
     }
 
     private void addCardToTeamB() {
-        currentBCard += 1;
+        currentBCard ++;
         mTmBCard.setText(String.valueOf(currentBCard));
     }
 
     private void addFoulToTeamA() {
-        currentAFoul += 1;
+        currentAFoul ++;
         mTmAFoul.setText(String.valueOf(currentAFoul));
     }
 
     private void addFoulToTeamB() {
-        currentBFoul += 1;
+        currentBFoul ++;
         mTmBFoul.setText(String.valueOf(currentBFoul));
     }
 
     private void addGoalToTeamA() {
-        currentAGoal += 1;
+        currentAGoal ++;
         mTmAGoal.setText(String.valueOf(currentAGoal));
     }
 
     private void addGoalToTeamB() {
-        currentBGoal += 1;
+        currentBGoal ++;
         mTmBGoal.setText(String.valueOf(currentBGoal));
     }
 
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putInt("currentAGoal", currentAGoal);
-        outState.putInt("currentBGoal", currentBGoal);
-        outState.putInt("currentAFoul", currentAFoul);
-        outState.putInt("currentBFoul", currentBFoul);
-        outState.putInt("currentACard", currentACard);
-        outState.putInt("currentBCard", currentBCard);
+        outState.putInt(KEY_CURRENT_A_GOAL, currentAGoal);
+        outState.putInt(KEY_CURRENT_B_GOAL, currentBGoal);
+        outState.putInt(KEY_CURRENT_A_FOUL, currentAFoul);
+        outState.putInt(KEY_CURRENT_B_FOUL, currentBFoul);
+        outState.putInt(KEY_CURRENT_A_CARD, currentACard);
+        outState.putInt(KEY_CURRENT_B_CARD, currentBCard);
     }
 
 
